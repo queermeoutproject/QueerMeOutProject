@@ -1,0 +1,963 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="homeButton.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script src="jquery-3.2.1.js"></script>
+
+    <script src="jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="jquery.fullPage.css">
+
+    <link rel="stylesheet" href="jquery.fancybox.min.css" />
+    <script src="jquery.fancybox.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <ul id="navMenu">
+                <!--One can specify specific areas on a page by specifying the page section anchor first, eg: "#qPageAnchor/qVideoAnchor"-->
+                <li data-menuanchor="homePageAnchor" class="active">
+                    <a href="#homePageAnchor"><img class="navItems" src="images/site/homeButton.png"></a>
+                </li>
+
+                <li data-menuanchor="lPageAnchor">
+                    <a href="#lPageAnchor"><img class="navItems" src="images/site/L.png"></a>
+                </li>
+
+                <li data-menuanchor="gPageAnchor">
+                    <a href="#gPageAnchor"><img class="navItems" src="images/site/G.png"></a>
+                </li>
+
+                <li data-menuanchor="bPageAnchor">
+                    <a href="#bPageAnchor"><img class="navItems" src="images/site/B.png"></a>
+                </li>
+
+                <li data-menuanchor="tPageAnchor">
+                    <a href="#tPageAnchor"><img class="navItems" src="images/site/T.png"></a>
+                </li>
+
+                <li data-menuanchor="qPageAnchor">
+                    <a href="#qPageAnchor"><img class="navItems" src="images/site/Q.png"></a>
+                </li>
+
+                <li data-menuanchor="iPageAnchor">
+                    <a href="#iPageAnchor"><img class="navItems" src="images/site/I.png"></a>
+                </li>
+
+                <li data-menuanchor="aPageAnchor">
+                    <a href="#aPageAnchor"><img class="navItems" src="images/site/A.png"></a>
+                </li>
+
+                <li data-menuanchor="plusPageAnchor">
+                    <a href="#plusPageAnchor"><img class="navItems" src="images/site/plus.png"></a>
+                </li>
+
+
+            </ul>
+
+            <div id="navSocialMedia">
+
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/queermeoutproject/"><img class="socialMediaIcons" src="images/site/Instagram.png"></a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://queermeout.wordpress.com/"><img class="socialMediaIcons" src="images/site/Wordpress.png"></a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCPxPfo3Dnj9pm_B3Fl1TAcw?view_as=subscriber"><img class="socialMediaIcons" src="images/site/YouTube%202.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Wraps all content to use fullPage.js on -->
+    <div id="wrapper">
+
+        <!--Each vertical transition page is a 'section', and each horizontal transition page is a 'slide'-->
+
+        <!--To specify a site navigation anchor point location, include 'data-anchor'-->
+        <div class="section" id="homePage" data-anchor="homePageAnchor">
+            <div class="slide" id="homePage1">
+                <div class="nameBox">
+                    <h4>Audio:</h4>
+                    <h2>Clarien Luttig</h2>
+                    <h3>UCT Masters Student</h3>
+                </div>
+                <div class="audioPlayerContainer">
+
+                    <audio src="media/ClarienHomePage.wav" preload="none" class="listen" type="audio/wav"></audio>
+
+                    <svg id="playable-1" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+</svg>
+
+                </div>
+
+                <div id="homeLogoContainer">
+
+
+
+                    <img id="homeLogo" src="images/homePage/logo%20with%20text.png">
+                </div>
+
+                <div id="homeTextContainer">
+                    <p>This interactive documentary explores <a href="#qPageAnchor">queerness</a> in Cape Town and South Africa, and how different genders and sexualities are linguistically expressed by examining how language and identity shape one another . A time of unprecedented freedom necessitates exploration of fluidity that breaks labels, the reclaimation of poisoned terms, and how hate-speech continues to rear burdens from the past. <br><br>To navigate, make use of your keyboard arrow keys and your mouse to scroll, click and drag. Each page is unique, so make sure to interact with anything that looks interesting. Turn up your volume to get the best experience.
+                    </p>
+                </div>
+
+                <div class="homeCol hCol1">
+                </div>
+
+                <div class="homeCol hCol2">
+                </div>
+
+                <div class="homeCol hCol3">
+                </div>
+
+                <hr class="clear">
+
+            </div>
+
+            <div class="slide" id="homePage2">
+                <div class="aboutContainer">
+                    <h1>About</h1>
+                </div>
+                <div class="threeColContainer">
+                    <div class="threeCol tCol1">
+                        <img src="images/homePage/annieBW.png">
+                        <h2>Annie Bekker</h2>
+                        <h3>Conception, Content Direction, Illustration</h3>
+                        <p>Annie, having begun her love affair with Photoshop at a young age, is a third-year Interactive Media student at UCT who originally conceptualised this project, and who thereafter served as a highly-creative and competent content director, video editor, and illustrator.</p>
+                    </div>
+                    <div class="threeCol tCol2">
+                        <img src="images/homePage/jessBW.png">
+                        <h2>Jessica Barraclough</h2>
+                        <h3>Coding, UX Design, Content Direction </h3>
+                        <p>Coming from a background in Fine Art, Media and Information Systems, Jess is a third-year Interactive Media &amp; Informatics student at UCT who not only helped shape this project’s content, but also wrote, edited, and managed its code and user experience design.</p>
+                    </div>
+                    <div class="threeCol tCol3">
+                        <img src="images/homePage/alixBW.png">
+                        <h2>Alix Hodge</h2>
+                        <h3>Cinematography</h3>
+                        <p>Alix, a talented photographer, writer, and filmmaker is a Screen Production student in their third year at UCT and generously dedicated many hours of their time to film our interviews, organise equipment and shooting locations, and provide editing advice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" id="homePage3">
+                <div class="aboutContainer">
+                    <h1>Acknowledgements</h1>
+                </div>
+                <div id="ackContainer">
+                <p>This project would not have been possible (or nearly as relevant) without the help of several important people.
+<br><br>
+To Tando and Marion, our supervisors, thank you for allowing us to do something so ambitious (and never vocally saying “I told you so”). Tando, thank you for all the feedback on countless pages of work, and for reading every blog post that we felt discouraged about and finding something encouraging to email back in reply. Your resources, contacts, support and strong guidance has been invaluable and we feel very grateful to have had supervisors who are so strongly invested in our work. 
+<br><br>
+To Clarien Luttig, Tessa Dowling, Nyx McLean, and Matthew Clayton, thank you for giving up so much of your time and sharing so much of your knowledge with us.
+<br><br>
+To all of our participants, without you this project would not be impossible. Thank you for sharing your voices with us - we hope that we have done them justice and that they are heard. 
+</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="lPage" data-anchor="lPageAnchor">
+            <div class="slide" id="lPage1">
+                <div class="headerImageContainer">
+                    <img class="headerImage" src='images/site/lesbian-gif-pink.gif'>
+                </div>
+            </div>
+
+            <div class="slide" id="lPage2">
+
+                <div class="nameBox">
+                    <h4>Audio:</h4>
+                    <h2>Annie Bekker</h2>
+                    <h3>Site Co-Creator</h3>
+                </div>
+                <div class="audioPlayerContainer">
+
+                    <audio src="media/goldstar.mp3" preload="none" class="listen" type="audio/mp3"></audio>
+
+                    <svg id="playable-3" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+                    </svg></div>
+
+                <div id="lGifContainer">
+                    <div class="lGifCol lgCol1">
+                        <img src="images/girl.gif">
+                        <img src="images/stars.gif">
+
+                    </div>
+                    <div class="lGifCol lgCol2">
+                        <img src="images/boy.gif">
+                        <img src="images/plaid.gif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide" id="lPage3">
+
+                <div class="audioPlayerContainer">
+
+                    <audio src="media/Tessa-lesbian.mp3" preload="none" class="listen" type="audio/mp3"></audio>
+
+                    <svg id="playable-2" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+</svg>
+
+                </div>
+                <div class="fullVidContainer">
+                    <div class="nameBox">
+                        <h4>Audio:</h4>
+                        <h2>Dr Tessa Dowling</h2>
+                        <h3>UCT African Languages Department</h3>
+                    </div>
+                    <iframe id="girlsProcessing" src="https://www.openprocessing.org/sketch/455917/embed/" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+            <div class="slide" id="lPage4">
+
+                <audio data-autoplay loop>
+	<source src="media/bathroomSounds.mp3" type="audio/mp3">
+</audio>
+                <video poster="images/bathroom/bathroomBG.jpg" id="bBGVideo" data-autoplay loop muted src="images/bathroom/bathroom.mp4" type="video/mp4"></video>
+
+                <div class="galleryContainer">
+                    <div class="bathroomCol bCol1">
+                        <a data-fancybox="gallery" href="images/bathroom/bathroom1Big.JPG"><img src="images/bathroom/bathroom1Big.JPG" class="bImage"></a>
+                        <a data-fancybox="gallery" href="images/bathroom/bathroom2Big.JPG"><img src="images/bathroom/bathroom2Big.JPG"></a>
+                    </div>
+                    <div class="bathroomCol bCol2">
+                        <a data-fancybox="gallery" href="images/bathroom/bathroom3Big.JPG"><img src="images/bathroom/bathroom3Big.JPG" class="bImage"></a>
+                        <a data-fancybox="gallery" href="images/bathroom/bathroom4Big.JPG"><img src="images/bathroom/bathroom4Small.JPG"></a>
+                    </div>
+                    <div class="bathroomCol bCol3">
+                        <a data-fancybox="gallery" href="images/bathroom/bathroom5.JPG"><img src="images/bathroom/bathroom5.JPG" class="bImage"></a>
+                        <a data-fancybox="gallery" href="images/bathroom/bathroom6.JPG"><img src="images/bathroom/bathroom6.JPG"></a>
+                    </div>
+                    <hr class="clear">
+                </div>
+
+
+            </div>
+
+            <div class="slide" id="lPage5">
+                <div class="slideHeaderContainer">
+                    <a target="_blank" href="https://live.fundza.mobi/home/library/fiction-short-stories/in-search-of-happiness/">
+                        <h1>UKUFUNISA NGOCHULUMANCO / In Search of Happiness</h1>
+                    </a>
+                    <h2> Chapter 7 Excerpt</h2>
+                </div>
+                <div class="lPoemCol lpCol1">
+                    <p>
+                        “Bebephuzana. Ayifuneki loo nto. Ibingamanyala!”
+                        <br><br> “Oobani Chino? Sixelele oobani? Ngobani abebephuzana?” uphinde wabuza uChenzira. <br><br>“Udadethu, u-Agnes nalentombazana isandukufika ebumelwaneni,” uphendulile uChino. Ilizwi lakhe livakala ukuba unomsindo nenye nje into endingayaziyo. Kungathi wophuke ngaphakathi.<br><br> “Sizokuthini ke thina apha Chino? Usibizele ntoni?” <br><br>“Majita, aninokundixelela ukuba asinokwazi ukuyilungisa le into.”<br><br> “Singobani thina? Eloxesha ladlula!” uChenzira uvakala enomsindo ngoku: “Ukuba ucinga ukwenza into embi kulamantombazana, ungandibali mna.” Uguqukile waphuma uChenzira.<br><br> “Uyinkukhu Chenzira, igwala lenkukhu.”<br><br> “Ukuba ukubayinkukhu kuthetha ukuba andidlwenguli amantombaza ngenxa yokuba bengawathandi amakhwenkwe, hayi ke ungandibiza loo nto.” <br><br>Ukuba ukhona ofuna ukulandela uChenzira makaphume ngoku,” utshilo uChino sekungathi akaqinisekanga ngoku.<br><br> “Awunokwazi ukuyitshintsha indlela abantu abangayo,” uphinde watsho engaphandle uChenzira. <br><br>Ulandelwe yenye inkwenkwe. Nala mabini amakhwenkwe ashiyekileyo aye aphuma. <br><br>UChino ushiyeke endlwini yedwa. <br><br>Sihleli apho phezu kwendlu. Ngubani ongasixelela ukuba into esiyenzayo ayilunganga? Yena lowo uxelelwa ngubani? <br><br>Into ebalulekileyo kum yeyokuba u-Agnes usecaleni kwam. <br><br>Into ebalulekileyo kukufumana ukonwaba ndibambelele kuko.<br>
+                    </p>
+                </div>
+                <div class="lPoemCol lpCol2">
+                    <p>
+                        “They were kissing. It isn’t normal. It was disgusting!”<br><br> “Who Chino? Tell us who? Who was kissing?” Chenzira asks.<br><br> “My sister, Agnes and this new girl from next door,” Chino replies. His voice is breaking with anger and something else, I think. Something like hurt.<br><br> “What are we doing here Chino? Why did you call us?”<br><br> “Guys don’t tell me we can’t fix this.”<br><br> “Who are we? That time is long gone brother!” Chenzira is angry now: “If you think of doing anything wrong to these girls I am not with you on that one.” Chenzira turns.<br><br> “You are a chicken, Chenzira.”<br><br> “If being a chicken means not raping girls, because they don’t like boys, then call me a chicken.”<br><br> “If anyone is with Chenzira, please walk out with him,” says Chino, unsure suddenly.<br><br> “You can’t fix how people feel,” Chenzira says, as he walks out.<br><br> One other boy follows him. And then the last two walk out.<br><br> Chino remains alone.<br><br> We stay together on the roof of the shack. Who is to tell us this is wrong? What is important is that I have Agnes by my side.<br><br> What is important is to find happiness and hold on to it.<br>
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="gPage" data-anchor="gPageAnchor">
+            <div class="slide" id="gPage1">
+                <div class="headerImageContainer">
+                    <img class="headerImage" src='images/site/gay-gif.gif'>
+                </div>
+            </div>
+            <div class="slide" id="gPage2">
+                <div class="nameBox">
+                    <h2>Buntu Yabo</h2>
+                </div>
+                <div class="fullVidContainer">
+                    <iframe id="gBuntuVid" src="https://www.youtube.com/embed/EGdbKA9328o?rel=0&amp;showinfo=0" data-autoplay frameborder="0" allowfullscreen></iframe>
+                    <!-- Need to fix autoplay to start only when navigating to slide -->
+
+                </div>
+            </div>
+            <div class="slide" id="gPage3">
+                <div class="nameBox">
+                    <h4>Audio</h4>
+                    <h2>Dr Tessa Dowling</h2>
+                    <h3>UCT African Languages Department</h3>
+                </div>
+                
+                <div class="directions"><h1>Special Love</h1><p>Click and drag</p></div>
+                <div class="fullVidContainer">
+                    <div class="audioPlayerContainer">
+                        <audio src="media/Tessa-gay.mp3" preload="none" class="listen" type="audio/mp3"></audio>
+
+                        <svg id="playable-4" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+</svg>
+
+                    </div>
+                    <iframe id="boysProcessing" src="https://www.openprocessing.org/sketch/460043/embed/" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="slide" id="gPage4">
+                <div class="nameBox">
+                    <h2>Luvuyo</h2>
+                </div>
+
+                <div class="fullVidContainer">
+                    <iframe id="gLuVid" src="https://www.youtube.com/embed/rMRZhJHhjJE?rel=0&amp;showinfo=0" data-autoplay frameborder="0" allowfullscreen></iframe>
+                    <!-- Need to fix autoplay to start only when navigating to slide -->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="bPage" data-anchor="bPageAnchor">
+            <div class="slide" id="bPage1">
+                <div class="headerImageContainer">
+                    <img src='images/site/bisexual-gif-header.gif'>
+                </div>
+            </div>
+            <div class="slide" id="bPage2">
+                <div class="nameBox">
+                    <h2>David Horscroft</h2>
+                </div>
+                <div class="fullVidContainer">
+                    <iframe id="bDavidVid" src="https://www.youtube.com/embed/0_YLlW3imaA?rel=0&amp;showinfo=0" data-autoplay frameborder="0" allowfullscreen></iframe>
+                    <!-- Need to fix autoplay to start only when navigating to slide -->
+
+                </div>
+            </div>
+            <div class="slide" id="bPage3">
+                <div class="nameBox">
+                    <h4>Audio:</h4>
+                    <h2>Annie Bekker</h2>
+                    <h3>Site Co-Creator</h3>
+                </div>
+                <div class="audioPlayerContainer">
+
+                    <audio src="media/definitionofsex.mp3" preload="none" class="listen" type="audio/wav"></audio>
+
+                    <svg id="playable-5" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+</svg>
+
+                </div>
+                <div class="fullImageContainer">
+
+                    <img id="biGif" src='images/site/queersex.gif'>
+
+                </div>
+                <div class="biCol biCol1"></div>
+                <div class="biCol biCol2"></div>
+            </div>
+        </div>
+
+        <div class="section" id="tPage" data-anchor="tPageAnchor">
+            <div class="slide" id="tPage1">
+                <div class="headerImageContainer">
+                    <img class="headerImage" src='images/site/trans-gif.gif'>
+                </div>
+            </div>
+            <div class="slide" id="tPage2">
+                <div class="fullVidContainer">
+                    <iframe id="tAlixVid" src="https://www.youtube.com/embed/PEtb26v54D8?rel=0&amp;showinfo=0" data-autoplay frameborder="0" allowfullscreen></iframe>
+                    <!-- Need to fix autoplay to start only when navigating to slide -->
+
+                </div>
+            </div>
+            <div class="slide" id="tPage3">
+                <iframe id="transDef" src="https://prezi.com/view/YWzao8mdllEjL0nyK0UN/embed" width="550" height="400"></iframe>
+            </div>
+            <div class="slide" id="tPage4">
+
+                <div class="nameBox">
+                    <h4>Audio:</h4>
+                    <h2>Ricky Kgositau</h2>
+                    <h3><a target="_blank" href="https://genderdynamix.org.za/">Gender Dynamix</a> - On <a target="_blank" href="https://www.youtube.com/watch?v=2QkX8kHWFPI">News24</a></h3>
+                </div>
+                <div class="audioPlayerContainer">
+
+                    <audio src="media/transgender.mp3" preload="none" class="listen" type="audio/wav"></audio>
+
+                    <svg id="playable-8" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+</svg>
+
+                </div>
+
+                <div class="fullVidContainer">
+                    <iframe id="fluidProcessing" src="https://www.openprocessing.org/sketch/462524/embed/" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="qPage" data-anchor="qPageAnchor">
+            <div class="slide" id="qPage1">
+                <div id="qHeaderImageContainer">
+                    <img class="headerImage" src='images/site/queergifyellow.gif'>
+                </div>
+                <div class="smallVidContainer">
+                    <div class='embed-container'>
+                        <iframe src="https://www.youtube.com/embed/jbXywPGMEQc?rel=0&amp;showinfo=0" data-autoplay frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="qPage2">
+                <div class="nameBox">
+                    <h2>Alice De Beer</h2>
+                </div>
+                <div class="fullVidContainer">
+                    <iframe id="qAliceVid" src="https://www.youtube.com/embed/UpIq0LQTkh0?rel=0&amp;showinfo=0" data-autoplay frameborder="0" allowfullscreen></iframe>
+                    <!-- Need to fix autoplay to start only when navigating to slide -->
+                </div>
+            </div>
+            <div class="slide" id="qPage3">
+                <iframe class="fullContainer" id="qTimeline" src="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=15O0O1MI0Ehzg3FpRY5d0Mj1U0opTPo9yO1Xg00Zir6Y&font=Default&lang=en&initial_zoom=2" frameborder="0"></iframe>
+            </div>
+            <div class="slide" id="qPage4">
+                <div class="nameBox">
+                    <h4>Audio:</h4>
+                    <h2>Clarien Luttig</h2>
+                    <h3>UCT Masters Student</h3>
+                </div>
+                <div class="audioPlayerContainer">
+
+                    <audio src="media/ClarienFridgeMagnets.wav" preload="none" class="listen" type="audio/wav"></audio>
+
+                    <svg id="playable-6" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+</svg>
+
+                </div>
+                <div class="fullVidContainer">
+
+                    <iframe id="wordsProcessing" src="https://www.openprocessing.org/sketch/463365/embed/" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="iPage" data-anchor="iPageAnchor">
+            <div class="slide" id="iPage1">
+                <div class="nameBox">
+                    <h4>Audio:</h4>
+                    <h2>Dr Tessa Dowling</h2>
+                    <h3>UCT African Languages Department</h3>
+                </div>
+
+                <div class="audioPlayerContainer">
+
+                    <audio src="media/Tessa-intersex.mp3" preload="none" class="listen" type="audio/mp3"></audio>
+
+                    <svg id="playable-7" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+</svg>
+
+                </div>
+                <div class="headerImageContainer">
+                    <img class="headerImage" src='images/site/intersexgif.gif'>
+                </div>
+            </div>
+
+            <div class="slide" id=iPage2>
+
+                <div class="nameBox">
+                    <h4>Audio:</h4>
+                    <h2>Matthew Clayton</h2>
+                    <h3><a target="_blank" href="https://triangle.org.za/">Triangle Project</a></h3>
+                </div>
+                <div class="fullVidContainer">
+                    <iframe id="iMatthewVid" src="https://www.youtube.com/embed/YWx-BSPmAzQ?rel=0&amp;showinfo=0" data-autoplay frameborder="0" allowfullscreen></iframe>
+                    <!-- Need to fix autoplay to start only when navigating to slide -->
+                </div>
+            </div>
+
+            <div class="slide" id="iPage3">
+                <div class="slideHeaderContainer">
+                    <h1><a target="_blank" href="http://www.writerstudio.co.za/about-lana-jacobson/feature-writing/105-the-third-sex.html">The 'Third' Sex</a></h1>
+                    <h2>By Lana Jacobson</h2>
+                </div>
+                <div id="iTextContainer">
+                    <p>Nthabiseng Mokoena (25) knew from a tender age that she was different. Her mother would tell her never to dress in front of others, saying, “Nthabi, you are very special, but you are not the same as the other little girls.” When she was old enough Nthabiseng understood that she was one of an estimated 2 million South Africans born with an intersex condition- neither clearly a male nor female, but with ambiguous genitalia.
+                        <br><br> She explains, “I was born in the rural town of Coligny in the North West Province , where the shocked midwife and my mother saw my genitals were female, but my clitoris resembled a tiny penis. The perplexed midwife told my mother to take me to a doctor when I was six months old, which my mother did. He advised immediate “genital normalisation” surgery to remove the phallus, making my genitals unmistakably female in appearance. My mother refused, and when at two years old I started showing female signs, playing with girls, she dressed me in dresses, finally classifying and registering me with the authorities as a girl.”
+                        <br><br> Nthabiseng’s childhood was blissful despite having to keep her dark secret, never undressing or bathing in front of anybody, until to her horror at the age of 13, instead of beginning to grow curvier, developing breasts like other girls, she began showing signs of masculine development, and her penis grew a little larger.
+                        <br><br> Nthabiseng shrugs, “I was clearly different. My living nightmare started when friends teased me about my boyish appearance and flat chest. My mother took me to a totally uninformed doctor, who said he had never come across the phenomena, would consult other doctors and we should return in two weeks time. On our return, he said I must have surgery, which my mother flatly refused, saying I could make up my own mind when I turned 18 if that was what I really wanted. It was also the first time my mother told my father that I was an intersex child. Even as a baby, he had never seen me undressed or bathed. He ignored the subject, and carried on as if he never knew. In any event they divorced a few years later, and my sister and I have never seen him since.”
+                        <br><br> Nthabiseng was an 18 year-old woman when her breasts suddenly began to develop. Her boyish figure became a huge issue, particularly when she visited the rural areas; villagers were puzzled about why such an extremely attractive woman never resembled the body curvaceous structure of a typical African women’s figure.
+                        <br><br> She excelled at school, obtaining a bursary to study metallurgy at Wits, where she was doomed to sharing student accommodation with two other girls.
+                        <br><br> Nthabiseng could never dress or undress in front of her room mates like ‘normal’ teenagers. There was a shortage of warm water, and the girls had to share a bath, or bath immediately after each other, but Nthabiseng never joined in. She would wake at 5am and shower before anybody else was awake. The girls talked about it and questioned her. “Life became unbearable and after a year I had to move into a flat of my own,” she admits.
+                        <br><br> Nthabiseng dated boys at Varsity, but only on one occasion allowed a boy to have sex with her in pitch darkness. She says, “He was very naïve, and he had serious withdrawal issues from me afterwards. I subsequently began dating women, feeling more comfortable as a <a href="#lPageAnchor">lesbian</a>”.
+                        <br><br> She says, “At that stage I hated my mother for not allowing surgery on me as a baby. “I couldn’t afford private medical care and whenever I went to a Government hospital and explained I was intersex the doctors were shocked. They would call colleagues and students to examine me. It’s so very degrading and insensitive. I used to feel I was inhuman, and even if I had flu, I was too terrified to see a doctor. To this day I have not overcome my fear of doctors.”
+                        <br><br> “I fared no better at Church, where as a youth pastor I desperately tried to find a sense of belonging. When I told the pastor I was intersexed and probably wouldn’t have children I learnt that in Christian belief they deny intersexed people are not created in the likeness of God. We are a variant of sexual development, as are <a href="#gPageAnchor">homosexuals</a>.
+                        <br><br> Nthabiseng’s life took a fortuitous turnabout one night when she accidentally switched to a television programme highlighting the plight of black intersex people. “I learnt about <a target="_blank" href="http://transgenderintersexafrica.org.za/">Transgender and Intersex Africa</a> an organisation specifically working with black gender issues, and the next morning phoned the organisation. I asked if they could recommend an informed and sympathetic doctor as I was terrified my clitoris would grow into a full penis,” she openly reveals. I told the doctor I hadn’t ever had periods, and the tests revealed that I was permanently infertile. I was told that I had under-descended testes in the abdominal. The doctor even said he would do the surgery for free make my clitoris totally feminine but he wanted to use me as a case history. I flatly refused to be exposed in that degrading way.”
+                        <br><br> In 2011 Nthabiseng joined <a target="_blank" href="http://transgenderintersexafrica.org.za/">Transgender and Intersex Africa</a>, where she is employed fulltime now as Advocacy Coordinator. She started meeting and mixing with many intersex people, and has learnt to be comfortable with her body. She is typically feminine, but feels fine often even dressing androgynously.
+                        <br><br> She says, “I am so pleased I never had surgery. The people I met, most of them, black and white, who have had surgery as babies, usually have confused parents who the doctors incorrect informed, and the children were subjected to surgery which has ended up being far more traumatic and confusing.”
+                        <br><br> “We have been raised in a world that makes us feel like monsters. My advice to other intersex people is to love and accept
+                        <br><br> Only then will you make the right decision about surgery. Read and research the situation, meet others like yourself and get in touch with an intersex support group. Surgery is not a magic pill that has no consequences. One cannot be told to become a boy or a girl and have surgery to make them so. Our sex and gender are determined by nature.
+                        <br><br> Nthabiseng is now engaged to a woman with whom she has had a long term relationship.She throws back her head and laughs, “But, now I have to explain I am a <a href="#lPageAnchor">lesbian</a> to my relatives. My mother would have been accepting, but she passed away. Half my family don’t accept the situation, and the other half asked for lobolo.” </p>
+                </div>
+                <a target="_blank" href="https://soundcloud.com/primediabroadcasting/an-introduction-to-gender-neutral-bathrooms"><img src="images/site/nthabiseng.png"></a>
+            </div>
+        </div>
+
+        <div class="section" id="aPage" data-anchor="aPageAnchor">
+            <div class="slide" id="aPage1">
+                <div class="headerImageContainer">
+                    <img class="headerImage" src='images/site/asexualgif2.gif'>
+                </div>
+            </div>
+
+            <div class="slide" id=aPage2>
+                <div class="nameBox">
+                    <h2><a target="_blank" href="https://www.youtube.com/watch?v=Ue6a5psQIXk">Boldly</a></h2>
+                </div>
+                <div class="fullVidContainer">
+                    <iframe id="aVid" src="https://www.youtube.com/embed/Ue6a5psQIXk?rel=0&amp;showinfo=0" data-autoplay frameborder="0" allowfullscreen></iframe>
+                    <!-- Need to fix autoplay to start only when navigating to slide -->
+                </div>
+            </div>
+
+            <div class="slide" id=aPage3>
+
+                <div class="nameBox">
+                    <h4>Audio:</h4>
+                    <h2>Michael Dor&Eacute;</h2>
+                    <h3>Asexual Activist - On <a target="_blank" href="https://www.youtube.com/watch?v=yCEY3cj-mcE">Talk Radio 702</a></h3>
+                </div>
+                
+                <div class="directions"><h1>Asexual - Invisible?</h1><p>Click to change brush<br><br>'+' to increase size<br><br>'-' to decrease size</p></div>
+                <div class="fullVidContainer">
+                    <div class="audioPlayerContainer">
+
+                        <audio src="media/asexuality.mp3" preload="none" class="listen" type="audio/wav"></audio>
+
+                        <svg id="playable-9" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" width="50%" height="50%" class="not-started">
+	<g class="shape">
+		<circle class="progress-track" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" />
+		<circle class="precache-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="0.25" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+		<circle class="progress-bar" cx="50" cy="50" r="47.45" stroke="#ffffff" stroke-opacity="1" stroke-linecap="round" fill="none" stroke-width="2" transform="rotate(-90 50 50)" />
+	</g>
+	<circle class="controls" cx="50" cy="50" r="45" stroke="none" fill="#ffffff" opacity="0.0" pointer-events="all" />
+	<g class="control pause">
+		<line x1="40" y1="35" x2="40" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="60" y1="35" x2="60" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control play">
+		<line x1="45" y1="35" x2="45" y2="65" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="45" y1="65" x2="65" y2="50" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+		<line x1="65" y1="50" x2="45" y2="35" stroke="#ffffff" fill="none" stroke-width="2" stroke-linecap="round" />
+	</g>
+	<g class="control stop">
+		<rect x="35" y="35" width="30" height="30" stroke="#ffffff" fill="none" stroke-width="2" />
+	</g>
+</svg>
+
+                    </div>
+                    <iframe id="asexualProcessing" src="https://www.openprocessing.org/sketch/462573/embed/" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="plusPage" data-anchor="plusPageAnchor">
+            <div class="slide" id="plusPage1">
+                <div class="formCol fCol1">
+                    <h1>Contact Us</h1>
+                    <div id="plusTextbox">
+                        <p>The diversity in queerness is endless and this project had a limited timeframe for conception. If your identity was not included and you would like to contribute your queer experiences with language in South Africa to help broaden our rainbow, we’d love to hear from you. <br><br>Fill in the contact form below and we’ll get back to you - if it’s a poem, a video, some writing, a photograph, a thought - we would love to include your unique experiences and insights. <br><br>All submitted content is handled sensitively and you may choose if and how you wish to be identified/represented. </p>
+                    </div>
+                </div>
+
+                <div class="formCol fCol2">
+                    <div class="formContainer">
+                        <form action="mailto:queermeoutproject@gmail.com" method="post" enctype="text/plain">
+
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="lang">Language:</label>
+                            <input type="text" id="lang" name="languages" placeholder="Languages you are proficient in..">
+
+                            <label for="message">Subject:</label>
+                            <textarea id="message" name="message" placeholder="Your message for  the Queer Me Out Project creators.." style="height:200px"></textarea>
+
+                            <input type="submit" value="Submit">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="plusPage2">
+                <h1>LGBTQIA+ Organisations in South Africa</h1>
+                <div id="orgContainerContainer">
+                    <div id="orgContainer">
+                        <div class="orgCol oCol1">
+                            <a target="_blank" href="https://ctrlaltgender.org/"><img src="images/organisations/ctrlAltGenderLogo.png"></a>
+                            <a target="_blank" href="http://www.gala.co.za/"><img src="images/organisations/galaLogo.png"></a>
+                            <a target="_blank" href="https://genderdynamix.org.za/"><img src="images/organisations/genderDynamicsLogo.png"></a>
+                        </div>
+                        <div class="orgCol oCol2">
+                            <a target="_blank" href="https://www.iranti-org.co.za/"><img src="images/organisations/irantiLogo.png"></a>
+                            <a target="_blank" href="http://www.out.org.za/"><img src="images/organisations/outLogo.png"></a>
+                            <a target="_blank" href="http://www.pridesheltertrust.com/"><img src="images/organisations/prideShelterTrustLogo.png"></a>
+                        </div>
+                        <div class="orgCol oCol3">
+                            <a target="_blank" href="http://www.genderjustice.org.za/"><img src="images/organisations/sonkeLogo.png"></a>
+                            <a target="_blank" href="http://transgenderintersexafrica.org.za/"><img src="images/organisations/tiaLogo.png"></a>
+                            <a target="_blank" href="https://triangle.org.za/"><img src="images/organisations/triangleProjectLogo.png"></a>
+                        </div>
+                        <hr class="clear">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Audio Player script below -->
+
+    <script>
+        var pc = 298.1371428256714; // 2 pi
+
+        function SoundPlayer(id) {
+            this.playObj = document.getElementById(id);
+            this.progress = this.playObj.querySelector(".progress-bar");
+            this.precache = this.playObj.querySelector(".precache-bar");
+            this.audioObj = this.playObj.parentElement.querySelector(".listen");
+            this.controlsObj = this.playObj.querySelector(".controls");
+            this.pt = this.playObj.createSVGPoint();
+
+            this.cursorPoint = cursorPoint;
+            this.setGraphValue = setGraphValue;
+            this.positionListener = positionListener;
+            this.angle = angle;
+            this.getStarted = getStarted;
+
+        }
+
+        function cursorPoint(evt) {
+            this.pt.x = evt.clientX;
+            this.pt.y = evt.clientY;
+            return this.pt.matrixTransform(this.playObj.getScreenCTM().inverse());
+        }
+
+        function setGraphValue(obj, val, thisThing) {
+            var val = pc - parseFloat(((val / thisThing.audioObj.duration) * pc), 10);
+            obj.style.strokeDashoffset = val;
+            if (val === 0) {
+                lunar.addClass(obj, "done");
+                if (obj === thisThing.progress) lunar.className(thisThing.playObj, "ended");
+            }
+        }
+
+        function positionListener(event) {
+            //   console.log("a",Math.sqrt((pc-loc.x)*(pc-loc.x) + (pc-loc.y)*    (pc-loc.y)));
+            var loc = this.cursorPoint(event),
+                deg = (this.angle(loc.x, loc.y) / 360),
+                pct = pc * deg;
+            console.log(loc, deg);
+        }
+
+        function angle(ex, ey) {
+            var dy = ey - 50; // 100;
+            var dx = ex - 50; // 100;
+            var theta = Math.atan2(dy, dx); // range (-PI, PI]
+            theta *= 180 / Math.PI; // rads to degs, range (-180, 180]
+            theta = theta + 90; // in our case we are animating from the top, so we offset by the rotation value;
+            if (theta < 0) theta = 360 + theta; // range [0, 360)
+            return theta;
+        }
+
+        function getStarted() {
+
+            var $this = this;
+
+            console.log("hola!");
+            console.log(this);
+            console.log($this.audioObj);
+
+            this.audioObj.addEventListener('progress', function() {
+
+                console.log("hola2!");
+                console.log(this);
+                console.log($this.audioObj);
+
+                var end = $this.audioObj.buffered.end($this.audioObj.buffered.length - 1);
+                $this.setGraphValue($this.precache, end, $this);
+            });
+
+            this.controlsObj.addEventListener("click", function(e) {
+
+                switch ($this.playObj.getAttribute("class")) {
+                    case "not-started":
+                        $this.audioObj.addEventListener('timeupdate', function() {
+                            $this.setGraphValue($this.progress, $this.audioObj.currentTime, $this);
+                        });
+                        $this.precache.addEventListener("mousedown", $this.positionListener, false);
+                        $this.audioObj.play();
+                        $this.playObj.setAttribute("class", "playing");
+                        break;
+                    case "playing":
+                        $this.playObj.setAttribute("class", "paused");
+                        $this.audioObj.pause();
+                        break;
+                    case "paused":
+                        $this.playObj.setAttribute("class", "playing");
+                        $this.audioObj.play();
+                        break;
+                    case "ended":
+                        $this.playObj.setAttribute("class", "not-started");
+                        $this.audioObj.removeEventListener('timeupdate', function() {
+                            $this.setGraphValue($this.progress, $this.audioObj.currentTime, $this);
+                        });
+                        break;
+                }
+            });
+        }
+
+    </script>
+
+    <script>
+        (function(root, factory) {
+            if (typeof define === 'function' && define.amd) {
+                define(factory);
+            } else if (typeof exports === 'object') {
+                module.exports = factory;
+            } else {
+                root.lunar = factory();
+            }
+        })(this, function() {
+
+            'use strict';
+
+            var lunar = {};
+
+            lunar.hasClass = function(elem, name) {
+                return new RegExp('(\\s|^)' + name + '(\\s|$)').test(elem.getAttribute('class'));
+            };
+
+            lunar.addClass = function(elem, name) {
+                !lunar.hasClass(elem, name) && elem.setAttribute('class', (!!elem.getAttribute('class') ? elem.getAttribute('class') + ' ' : '') + name);
+            };
+
+            lunar.removeClass = function(elem, name) {
+                var remove = elem.getAttribute('class').replace(new RegExp('(\\s|^)' + name + '(\\s|$)', 'g'), '$2');
+                lunar.hasClass(elem, name) && elem.setAttribute('class', remove);
+            };
+
+            lunar.toggleClass = function(elem, name) {
+                lunar[lunar.hasClass(elem, name) ? 'removeClass' : 'addClass'](elem, name);
+            };
+
+            lunar.className = function(elem, name) {
+                elem.setAttribute("class", name);
+                console.log("className", elem);
+            }
+
+            return lunar;
+
+        });
+
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#wrapper').fullpage({
+                /*Add customised fullPage.js options here, available: https://github.com/alvarotrigo/fullPage.js#fullpagejs */
+                anchors: ['homePageAnchor', 'lPageAnchor', 'gPageAnchor', 'bPageAnchor', 'tPageAnchor', 'qPageAnchor', 'iPageAnchor', 'aPageAnchor', 'plusPageAnchor'],
+                menu: '#navMenu',
+                scrollBar: true,
+                slidesNavigation: true
+                /*Consider adding parallax*/
+            });
+
+            var playerOne = new SoundPlayer('playable-1');
+            playerOne.getStarted();
+
+            var playerTwo = new SoundPlayer('playable-2');
+            playerTwo.getStarted();
+
+            var playerTwo = new SoundPlayer('playable-3');
+            playerTwo.getStarted();
+
+            var playerTwo = new SoundPlayer('playable-4');
+            playerTwo.getStarted();
+
+            var playerTwo = new SoundPlayer('playable-5');
+            playerTwo.getStarted();
+
+            var playerTwo = new SoundPlayer('playable-6');
+            playerTwo.getStarted();
+
+            var playerTwo = new SoundPlayer('playable-7');
+            playerTwo.getStarted();
+
+            var playerTwo = new SoundPlayer('playable-8');
+            playerTwo.getStarted();
+
+            var playerTwo = new SoundPlayer('playable-9');
+            playerTwo.getStarted();
+        });
+
+    </script>
+
+
+</body>
+
+</html>
