@@ -146,6 +146,16 @@ body {
     width:30%
 }
 
+#homePage1 .nameBox{
+    background-color: rgba(0,0,0,0.25);
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    width: 25%;
+}
+
 h4{
     font-family: Frontage-Bulb;
     font-size: .8em;
@@ -746,6 +756,7 @@ input[type=submit]:hover {
     margin-left: 10%;
     margin-right: 10%;
     color: white;
+    margin-bottom: 5%;
 }
 
 .formCol {
@@ -821,6 +832,20 @@ input[type=submit]:hover {
     margin-left: 4%;
     margin-top: 2%;
     float: left;
+}
+
+@media screen and (min-width: 1600px) {
+    .navbar {
+        margin-left: 96%;
+    }
+    .section {
+        padding-right: 4%;
+    }
+    .galleryContainer {
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+    /* 3 columns for wider screens */
 }
 
 @media screen and (min-width: 1280px) {
